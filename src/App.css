@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
+
+/* Reset de estilos */
+body, h1, h2, p, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    /* Fondo con líneas en movimiento */
+    background: linear-gradient(90deg, #ff6b6b, #6b5b95, #feb236, #d64161);
+
+    background-size: 400% 400%;
+    animation: moveBackground 10s ease infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-input {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input label {
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.form-input input {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.form-input button {
+    margin-top: 20px; /* Ajusté el margen para que sea más proporcionado */
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #8c16b6;
+    border: none;
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
+    color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flower {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 25px 0;
+    border-color: #ff0000 transparent transparent;
+  }
+
+  .flower::before,
+  .flower::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    border-radius: 50%;
+  }
+
+  .flower::before {
+    top: -25px;
+    left: 0;
+  }
+
+  .flower::after {
+    top: -25px;
+    left: 25px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
+
+/* Reset de estilos */
+body, h1, h2, p, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    /* Fondo con líneas en movimiento */
+    background: linear-gradient(90deg, #ff6b6b, #6b5b95, #feb236, #d64161);
+
+    background-size: 400% 400%;
+    animation: moveBackground 10s ease infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.flower-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.flower-position p{
+    margin: 10px;
+    font-size: 30px;
+}
+
+@keyframes moveImage {
+    0% { transform: translateX(0) rotate(0); }
+      50% { transform: translateX(50px) rotate(10deg); }
+      100% { transform: translateX(0) rotate(0); }
+  }
+
+  .moving-image {
+ 
+    position: relative;
+    background-size: cover;
+    animation: moveImage 4s infinite; /* 4s es la duración de la animación y 'infinite' la hace repetitiva */
+  }
+  .btn-back{
+    margin-bottom: 20px;
+    margin-top: 20px; /* Ajusté el margen para que sea más proporcionado */
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #8c16b6;
+    border: none;
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
+    color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+  }
+.text {
+    text-align: center;
+    letter-spacing: 3px;
+}
+.flower-position p{
+    font-size: 40px;
+}
+.flower-position span{
+    color: #ffffff;
+    font-weight: 900;
+}
